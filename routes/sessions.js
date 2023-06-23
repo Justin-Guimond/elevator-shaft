@@ -16,4 +16,8 @@ router.get('/:id/edit', sessionsController.edit);
 
 router.put('/:id/edit', sessionsController.update);
 
+router.get('/resources', function(req, res, next) {
+    res.render('resources', { title: 'Resources' });
+  });
+  
 module.exports = router;

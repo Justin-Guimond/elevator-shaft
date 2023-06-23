@@ -17,5 +17,5 @@ const sessionSchema = new mongoose.Schema (
     }
 ); 
 
-// What is the first argument 'Session'?
+// Why is Session capitalized?
 module.exports = mongoose.model('Session', sessionSchema);

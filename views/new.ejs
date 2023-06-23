@@ -1,2 +1,43 @@
 <%- include('./partials/header')  %>
+
+<h2>Add Day:</h2>
+<form action="/" method="POST">
+    <div class="formContainer">  
+        <label>Date: 
+            <input class="newForm" type="date" name="season">
+        </label>
+        <br/><br/>
+        <label>Day: 
+            <input class="newForm" type="number" name="day">
+        </label>
+        <br/><br/>
+        <label>Mountain: 
+            <input class="newForm" type="text" name="mountain">
+        </label>
+        <br/><br/>
+        <label>Who: 
+            <input class="newForm" type="text" name="who">
+        </label>
+        <br/><br/>
+        <label>Weather: 
+            <input class="newForm" type="text" name="weather">
+        </label>
+        <br/><br/>
+        <label>Temp Hi: 
+            <input class="newForm" type="text" name="tempHi">
+        </label>
+        <br/><br/>
+        <label>Temp Lo: 
+            <input class="newForm" type="text" name="tempLo">
+        </label>
+        <br/><br/>
+        <label>Notes: 
+            <input class="newForm" type="text" name="notes">
+        </label>
+        <br/><br/>
+    </div> 
+        <br/><br/>
+        <button type="submit">Add Day</button>
+</form>
+
 <%- include('./partials/footer')  %>

@@ -1,5 +1,51 @@
 <%- include('./partials/header')  %>
 
-<h1>Home</h1>
+<h1><%= title %></h1>
+<div class="container">
+    <table class="responsive-table">
+        <!-- make season below a template to auto-change to current season -->
+        <caption>22/23 Season</caption> 
+        <thead>
+            <tr>
+                <!-- include edit delete right side of date -->
+                <th>Date</th>
+                <th>Day</th>
+                <th>Mountain</th>
+                <th>Who</th>
+                <th>Weather</th>
+                <th>Temp Hi</th>
+                <th>Temp Lo</th>
+                <th>Wind</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(let i = 0; i < sessions.length; i++) {%>
+                <tr>
+                    <td><%= sessions[i].date %></td>
+                    <td><%= sessions[i].day %></td>
+                    <td><%= sessions[i].mountain %></td>
+                    <td><%= sessions[i].who %></td>
+                    <td><%= sessions[i].weather %></td>
+                    <td><%= sessions[i].tempHi %></td>
+                    <td><%= sessions[i].tempLo %></td>
+                    <td><%= sessions[i].wind %></td>
+                    <td><%= sessions[i].notes %></td>
+                    <td>
+                        <a href="/<%=sessions[i]._id%>/edit">
+                            <input type="image" src="/images/pencil-square.svg"></input></a>
+                    </td>
+                    <td>
+                        <form action="/<%= sessions[i]._id %>?_method=DELETE" method="POST">
+                            <input type="image" src="/images/trash3 (1).svg">
+                        </form>
+                    </td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+</div>
 
 <%- include('./partials/footer')  %>
+
+<!-- link for data table format https://codepen.io/pixelchar/full/rNaKLM -->

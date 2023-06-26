@@ -5,14 +5,18 @@ body {
   font: 14px "Gothic A1", "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-
 nav a {
   color: white;
   text-decoration: none;
 }
 
+nav a.current {
+  text-decoration: underline;
+}
+
 caption, a {
   color: #286143;
+  text-decoration: none;
 }
 
 header {
@@ -62,17 +66,17 @@ main {
 h1 {
   color: #6e644d;
 }
-/* 
+
 table {
   display: flex;
 }
 
-table td {
+/* table td {
   display: flex;
   text-align: right;
-}
+} */
 
 table th {
   display: flex;
   text-align: left;
-} */
+}

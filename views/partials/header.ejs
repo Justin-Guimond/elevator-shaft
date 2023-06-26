@@ -2,6 +2,9 @@
 <html>
   <head>
     <title><%= title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="/javascripts/script.js"></script>
@@ -9,10 +12,17 @@
   <body>
     <header>
       <nav>
-        <a href="/">Elevator Shaft</a>
-          |
-        <a href="/new">New Day</a>
-          |
-        <a href="/resources">Resources</a>
+        <ul>
+          <li class="leftNav">
+            <a class="navLinks" id="homeButton" href="/">Elevator Shaft</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="rightNav">
+            <a class="navLinks" id="newDay" href="/new">New Day</a>
+            <a class="navLinks" id="resources" href="/resources">Resources</a>
+          </li>
+        </ul>
       </nav>
     </header>
+    <main>

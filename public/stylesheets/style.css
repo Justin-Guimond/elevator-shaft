@@ -1,8 +1,78 @@
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  margin: 0 auto;
+  font: 14px "Gothic A1", "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+
+nav a {
+  color: white;
+  text-decoration: none;
 }
+
+caption, a {
+  color: #286143;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  background-color: #6e644d;
+  margin: 0 auto;
+}
+
+nav {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.leftNav {
+  display: inline;
+  float: left;
+}
+
+.rightNav {
+  display: inline;
+  float: right;
+}
+
+#newDay, #resources {
+  padding-right: 40px;
+  align-content: right;
+}
+
+caption {
+  margin: 5%;
+}
+
+main {
+  padding: 60px 50px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #6e644d;
+}
+/* 
+table {
+  display: flex;
+}
+
+table td {
+  display: flex;
+  text-align: right;
+}
+
+table th {
+  display: flex;
+  text-align: left;
+} */

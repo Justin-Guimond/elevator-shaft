@@ -65,18 +65,26 @@ main {
 
 h1 {
   color: #6e644d;
-}
+  align-content: center;
 
-table {
-  display: flex;
 }
-
-/* table td {
-  display: flex;
-  text-align: right;
-} */
 
 table th {
   display: flex;
   text-align: left;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.newForm {
+  display: flex;
+  float: right;
+  margin-left: 10px;
+}
+
+button { 
+  display: inline-block;
 }

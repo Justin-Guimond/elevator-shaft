@@ -1,8 +1,11 @@
+html {
+  font-size: 32px;
+}
 
 body {
   display: flex;
   margin: 0 auto;
-  font: 14px "Gothic A1", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: "Gothic A1", "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 nav a {
@@ -36,7 +39,7 @@ nav {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .leftNav {
@@ -66,7 +69,6 @@ main {
 h1 {
   color: #6e644d;
   align-content: center;
-
 }
 
 table th {

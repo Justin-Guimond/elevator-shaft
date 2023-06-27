@@ -5,7 +5,7 @@ html {
 body {
   display: flex;
   margin: 0 auto;
-  font: "Gothic A1", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 nav a {
@@ -157,6 +157,10 @@ tr:nth-of-type(2n) {
 
   #deleteForm {
     display: inline-block;
+  }
+
+  nav {
+    padding-bottom: 45px;
   }
 
 }

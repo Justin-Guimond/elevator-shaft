@@ -18,14 +18,12 @@ $(() => {
         }
     });
 
-    // function confirmDelete() {
-    //     const result = confirm('Are you sure you want to delete?')
+    document.getElementById('deleteButton').addEventListener('click', function(event) {
+        event.preventDefault();
 
-    //     if (result) {
-    //             Sessions.findByIdAndRemove(req.params.id);
-    //             res.redirect('/');   
-    //     } else {
-    //         res.redirect('/');
-    //     };
-    // };
+        if (confirm('Are you sure you want to delete?')) {
+            document.getElementById('deleteForm').submit();
+        }
+    })
+
 });

@@ -3,36 +3,36 @@
 <h1>Edit Day</h1>
 <form action="/<%= session._id %>/edit?_method=PUT" method="POST">
     <div class="formContainer">  
-        <label>Date: 
+        <label> Date: <br/><%= session.date.getMonth() %>-<%= session.date.getDate() %>-<%= session.date.getFullYear() %>
             <input class="newForm" type="date" name="season">
         </label>
         <br/><br/>
         <label>Day: 
-            <input class="newForm" type="number" name="day">
+            <input value="<%= session.day %>" class="newForm" type="number" name="day">
         </label>
         <br/><br/>
         <label>Mountain: 
-            <input class="newForm" type="text" name="mountain">
+            <input value="<%= session.mountain %>" class="newForm" type="text" name="mountain">
         </label>
         <br/><br/>
         <label>Who: 
-            <input class="newForm" type="text" name="who">
+            <input value="<%= session.who %>" class="newForm" type="text" name="who">
         </label>
         <br/><br/>
         <label>Weather: 
-            <input class="newForm" type="text" name="weather">
+            <input value="<%= session.weather %>" class="newForm" type="text" name="weather">
         </label>
         <br/><br/>
         <label>Temp Hi: 
-            <input class="newForm" type="number" name="tempHi">
+            <input value="<%= session.tempHi %>" class="newForm" type="number" name="tempHi">
         </label>
         <br/><br/>
         <label>Wind: 
-            <input class="newForm" type="number" name="wind">
+            <input value="<%= session.wind %>" class="newForm" type="number" name="wind">
         </label>
         <br/><br/>
         <label>Notes: 
-            <input class="newForm" type="text" name="notes">
+            <input value="<%= session.notes %>" class="newForm" type="text" name="notes">
         </label>
         <br/><br/>
     </div> 

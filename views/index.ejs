@@ -21,7 +21,7 @@
         <tbody>
             <% for(let i = 0; i < sessions.length; i++) {%>
                 <tr>
-                    <td data-cell="Date" ><%= sessions[i].date %></td>
+                    <td data-cell="Date" ><%= sessions[i].date.getMonth() %>-<%= sessions[i].date.getDate() %>-<%= sessions[i].date.getFullYear() %></td>
                     <td data-cell="Day" ><%= sessions[i].day %></td>
                     <td data-cell="Mountain" ><%= sessions[i].mountain %></td>
                     <td data-cell="Who" ><%= sessions[i].who %></td>
@@ -35,7 +35,7 @@
                     </td>
                     <td data-cell="Delete" >
                         <form id="deleteForm" action="/<%= sessions[i]._id %>?_method=DELETE" method="POST">
-                            <input class="icons" onclick="confirmDelete()" type="image" src="/images/trash3 (1).svg">
+                            <input id="deleteButton" class="icons" type="image" src="/images/trash3 (1).svg">
                         </form>
                     </td>
                 </tr>

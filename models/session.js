@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 
 const sessionSchema = new mongoose.Schema (
     {
-        date: { type: Date },
         day: { type: Number, required: true },
+        date: { type: Date },
         tempHi: { type: Number },
         weather: { type: String, enum: ['Sunny', 'Partly Sunny', 'Cloudy', 'Snowing', 'Raining', 'Sleeting'] },
         who: { type: String },

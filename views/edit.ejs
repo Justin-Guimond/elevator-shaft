@@ -3,12 +3,12 @@
 <h1>Edit Day</h1>
 <form action="/<%= session._id %>/edit?_method=PUT" method="POST">
     <div class="formContainer">  
-        <label> Date: <br/><%= session.date.getMonth() %>-<%= session.date.getDate() %>-<%= session.date.getFullYear() %>
-            <input class="newForm" type="date" name="season">
-        </label>
-        <br/><br/>
         <label>Day: 
             <input value="<%= session.day %>" class="newForm" type="number" name="day">
+        </label>
+        <br/><br/>
+        <label> Date: <br/><%= (session.date.getMonth() + 1) %>-<%= (session.date.getDate() + 1) %>-<%= session.date.getFullYear() %>
+            <input class="newForm" type="date" name="season">
         </label>
         <br/><br/>
         <label>Mountain: 

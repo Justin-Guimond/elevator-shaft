@@ -151,55 +151,6 @@ select {
   background-color: #3e9868;
   cursor: pointer;
 }
-/* 
-@media (max-width: 720px) and (min-width: 400px) {
-
-  html {
-    font-size: 16px;
-  }
-
-  main{
-    width: 80%;
-  }
-
-  table {
-    width: 100%;
-  }
-
-  th {
-    display: none;
-  }
-
-  td {
-    display: block;
-    padding: .5rem 1rem;
-  }
-
-  td:first-child {
-    padding-top: 1rem;
-  }
-
-  td:last-child {
-    padding-bottom: 1rem;
-  }
-
-  td::before {
-    content: attr(data-cell) ": ";
-    font-weight: 700;
-  }
-
-  #deleteForm {
-    display: inline-block;
-  }
-
-  nav {
-    padding-bottom: 45px;
-  }
-
-  .formContainer {
-    padding: 0 25% 0 25%;
-  }
-} */
 
 @media (max-device-width: 399px) {
 

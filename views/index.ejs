@@ -21,7 +21,7 @@
         <tbody>
             <% for(let i = 0; i < sessions.length; i++) {%>
                 <tr>
-                    <td data-cell="Date" ><%= sessions[i].date.getMonth() %>-<%= sessions[i].date.getDate() %>-<%= sessions[i].date.getFullYear() %></td>
+                    <td data-cell="Date" ><%= (sessions[i].date.getMonth() + 1) %>-<%= (sessions[i].date.getDate() + 1) %>-<%= sessions[i].date.getFullYear() %></td>
                     <td data-cell="Day" ><%= sessions[i].day %></td>
                     <td data-cell="Mountain" ><%= sessions[i].mountain %></td>
                     <td data-cell="Who" ><%= sessions[i].who %></td>

@@ -70,8 +70,9 @@ h1 {
 .formContainer {
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
+  padding: 20px;
 }
+
 
 .newForm {
   display: flex;

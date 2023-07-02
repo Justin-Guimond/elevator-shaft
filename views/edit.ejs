@@ -20,7 +20,15 @@
         </label>
         <br/><br/>
         <label>Weather: 
-            <input value="<%= session.weather %>" class="newForm" type="text" name="weather">
+            <select name="weather">
+                <option value=""></option>
+                <option value="Sunny">Sunny</option>
+                <option value="Partly Sunny">Partly Sunny</option>
+                <option value="Cloudy">Cloudy</option>
+                <option value="Snowing">Snowing</option>
+                <option value="Raining">Raining</option>
+                <option value="Sleeting">Sleeting</option>
+            </select>        
         </label>
         <br/><br/>
         <label>Temp Hi: 

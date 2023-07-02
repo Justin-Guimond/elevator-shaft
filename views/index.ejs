@@ -22,7 +22,9 @@
             <% for(let i = 0; i < sessions.length; i++) {%>
                 <tr>
                     <td data-cell="Day" ><%= sessions[i].day %></td>
-                    <td data-cell="Date" ><%= (sessions[i].date.getMonth() + 1) %>-<%= (sessions[i].date.getDate() + 1) %>-<%= sessions[i].date.getFullYear() %></td>
+                    <td data-cell="Date" >
+                        <!-- <% var date = new Date(sessions[i].date.getTime() + (24 * 60 * 60 * 1000)); %> adds 24 hrs (1day) to the original date -->
+                        <%= date.toLocaleDateString() %></td>
                     <td data-cell="Mountain" ><%= sessions[i].mountain %></td>
                     <td data-cell="Who" ><%= sessions[i].who %></td>
                     <td data-cell="Weather" ><%= sessions[i].weather %></td>
